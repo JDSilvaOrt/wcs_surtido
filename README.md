@@ -31,68 +31,76 @@ Para superar las limitaciones físicas del hardware en el autoenfoque de etiquet
    git clone [https://github.com/JDSilvaOrt/wcs_surtido.git](https://github.com/JDSilvaOrt/wcs_surtido.git)
 
 
+## 🌎 Entorno de Desarrollo
 
-
-
-
-
-
-🌎 Entorno de Desarrollo
 Este proyecto fue desarrollado y probado con una configuración de entorno específica. Para evitar problemas de compatibilidad y asegurar que el proyecto compile correctamente, se recomienda encarecidamente utilizar las siguientes versiones de software.
 
-🎯 Flutter & Dart
+### 🎯 Flutter & Dart
+
 El proyecto utiliza una revisión (commit) de Git específica de Flutter para garantizar la consistencia.
 
-Flutter: 3.29.0
-Canal: stable
-Revisión (Commit): 35c388afb5
-Dart: 3.7.0
-Cómo replicar este entorno:
+* **Flutter:** `3.29.0`
+* **Canal:** `stable`
+* **Revisión (Commit):** `35c388afb5`
+* **Dart:** `3.7.0`
 
-Descarga e instala el SDK de Flutter (si aún no lo tienes).
+**Cómo replicar este entorno:**
 
-Navega hasta la carpeta donde instalaste Flutter (ej. C:\dev\flutter) en tu terminal.
+1.  **[Descarga e instala el SDK de Flutter](https://docs.flutter.dev/get-started/install)** (si aún no lo tienes).
+2.  Navega hasta la carpeta donde instalaste Flutter (ej. `C:\dev\flutter`) en tu terminal.
+3.  Ejecuta los siguientes comandos de Git para cambiar a la revisión exacta del proyecto:
 
-Ejecuta los siguientes comandos de Git para cambiar a la revisión exacta del proyecto:
+    ```bash
+    # Asegura que tienes la información más reciente del repositorio
+    git fetch
 
-# Asegura que tienes la información más reciente del repositorio
-git fetch
+    # Cambia tu SDK a la revisión exacta usada en este proyecto
+    git checkout 35c388afb5
+    ```
 
-# Cambia tu SDK a la revisión exacta usada en este proyecto
-git checkout 35c388afb5
-Ejecuta flutter doctor -v para verificar que tu entorno coincida y descargar los artefactos de Dart correspondientes.
+4.  Ejecuta `flutter doctor -v` para verificar que tu entorno coincida y descargar los artefactos de Dart correspondientes.
 
-🤖 Desarrollo Android
-Android Studio: 2024.2
-Descargar Android Studio
-Android SDK: 35.0.1
-Build Tools: 35.0.1
-Java: OpenJDK 21.0.4 (Viene incluido con Android Studio 2024.2)
-Pasos de configuración:
+---
 
-Instala Android Studio.
+### 🤖 Desarrollo Android
 
-Abre el SDK Manager (en Android Studio: File > Settings > Languages & Frameworks > Android SDK).
+* **Android Studio:** `2024.2`
+    * **[Descargar Android Studio](https://developer.android.com/studio)**
+* **Android SDK:** `35.0.1`
+* **Build Tools:** `35.0.1`
+* **Java:** `OpenJDK 21.0.4` (Viene incluido con Android Studio 2024.2)
 
-En la pestaña "SDK Platforms", asegúrate de que "Android SDK Platform 35" esté instalado.
+**Pasos de configuración:**
 
-En la pestaña "SDK Tools", asegúrate de que "Android SDK Build-Tools 35.0.1" esté instalado.
+1.  Instala Android Studio.
+2.  Abre el **SDK Manager** (en Android Studio: `File` > `Settings` > `Languages & Frameworks` > `Android SDK`).
+3.  En la pestaña **"SDK Platforms"**, asegúrate de que **"Android SDK Platform 35"** esté instalado.
+4.  En la pestaña **"SDK Tools"**, asegúrate de que **"Android SDK Build-Tools 35.0.1"** esté instalado.
+5.  **Importante:** Acepta las licencias de Android ejecutando el siguiente comando en tu terminal:
 
-Importante: Acepta las licencias de Android ejecutando el siguiente comando en tu terminal:
+    ```bash
+    flutter doctor --android-licenses
+    ```
 
-flutter doctor --android-licenses
-🪟 Desarrollo Windows (Opcional)
+---
+
+### 🪟 Desarrollo Windows (Opcional)
+
 Si deseas compilar la versión de escritorio para Windows, necesitas:
 
-Visual Studio 2022 Community
-Descargar Visual Studio
-Durante la instalación, selecciona la carga de trabajo: "Desarrollo de escritorio con C++".
-Asegúrate de que los siguientes componentes individuales están marcados:
-MSVC v142 - VS 2019 C++ x64/x86 build tools (o la versión v143 más reciente)
-C++ CMake tools for Windows
-Windows 10 SDK (o Windows 11 SDK)
-📝 Editores y Extensiones
-VS Code: 1.105.1
-Descargar VS Code
-Extensión de Flutter para VS Code: v3.120.0
-Instalar desde el Marketplace
+* **Visual Studio 2022 Community**
+    * **[Descargar Visual Studio](https://visualstudio.microsoft.com/es/vs/community/)**
+* Durante la instalación, selecciona la carga de trabajo: **"Desarrollo de escritorio con C++"**.
+* Asegúrate de que los siguientes **componentes individuales** están marcados:
+    * `MSVC v142 - VS 2019 C++ x64/x86 build tools` (o la versión v143 más reciente)
+    * `C++ CMake tools for Windows`
+    * `Windows 10 SDK` (o Windows 11 SDK)
+
+---
+
+### 📝 Editores y Extensiones
+
+* **VS Code:** `1.105.1`
+    * **[Descargar VS Code](https://code.visualstudio.com/)**
+* **Extensión de Flutter para VS Code:** `v3.120.0`
+    * **[Instalar desde el Marketplace](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)**
