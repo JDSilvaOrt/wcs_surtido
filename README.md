@@ -34,7 +34,10 @@ Para superar las limitaciones físicas del hardware en el autoenfoque de etiquet
 
 
 
-   🌎 Entorno de Desarrollo
+
+
+
+🌎 Entorno de Desarrollo
 Este proyecto fue desarrollado y probado con una configuración de entorno específica. Para evitar problemas de compatibilidad y asegurar que el proyecto compile correctamente, se recomienda encarecidamente utilizar las siguientes versiones de software.
 
 🎯 Flutter & Dart
